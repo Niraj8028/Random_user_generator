@@ -18,9 +18,13 @@ const App=()=>{
         
     },[])
     return(
-        <Container fluid>
-        <Mycard details={details}/>
-        </Container>
+        <Container fluid className="p-4 bg-primary App">
+      <Row>
+        <Col md={4} className="offset-md-4 mt-4">
+          <Mycard details={details} />
+        </Col>
+      </Row>
+    </Container>
     )
     
     
