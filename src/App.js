@@ -3,6 +3,7 @@ import { Container,Row,Col } from "reactstrap";
 
 import "./App.css"
 import axios from "axios";
+import Mycard from "./card";
 
 const App=()=>{
     const[details,setDetails]=useState({});
@@ -17,7 +18,9 @@ const App=()=>{
         
     },[])
     return(
-        <h1>Profiles</h1>
+        <Container fluid>
+        <Mycard details={details}/>
+        </Container>
     )
     
     
