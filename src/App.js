@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from "react";
 import { Container,Row,Col } from "reactstrap";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css"
 import axios from "axios";
 import Mycard from "./card";
